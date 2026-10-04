@@ -273,9 +273,11 @@ function drawEscapeFractal(targetCanvas, view, colorPhases, maxIterations, julia
           // Offset of this sample from the pixel's position (0 when there's just one)
           const offsetX = (sx + 0.5) / samplesPerSide - 0.5;
           const offsetY = (sy + 0.5) / samplesPerSide - 0.5;
+          // Canvas rows count downward, but imaginary values go up,
+          // so moving down a row means subtracting
           colorOfPoint(
             view.x + (px + offsetX - width / 2) * unitsPerPixel,
-            view.y + (py + offsetY - height / 2) * unitsPerPixel,
+            view.y - (py + offsetY - height / 2) * unitsPerPixel,
             rgb
           );
           red += rgb[0];
@@ -519,7 +521,10 @@ function zoomInto(center, widthInPixels) {
 
   if (newWidth < smallestViewWidth) {
     mandelbrotCanvas.getContext("2d").putImageData(mandelbrotImage, 0, 0);
-    mandelbrotInfo.textContent += " (can't zoom further: the computer's numbers run out of precision)";
+    const note = " (can't zoom further: the computer's numbers run out of precision)";
+    if (!mandelbrotInfo.textContent.endsWith(note)) {
+      mandelbrotInfo.textContent += note; // add it once, not again on every click
+    }
     return;
   }
 
@@ -527,7 +532,7 @@ function zoomInto(center, widthInPixels) {
   mandelbrotSharp = false;
   mandelbrotView = {
     x: v.x + (center.x - mandelbrotCanvas.width / 2) * unitsPerPixel,
-    y: v.y + (center.y - mandelbrotCanvas.height / 2) * unitsPerPixel,
+    y: v.y - (center.y - mandelbrotCanvas.height / 2) * unitsPerPixel, // rows count downward
     width: newWidth,
   };
   showMandelbrotDepth();
