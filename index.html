@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>James John</title>
+  <!-- Link to the separate stylesheet in the css/ folder -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <!-- To add a photo: put a file such as me.jpg in the images/ folder,
+         then remove the comment markers around the line below. -->
+    <!-- <img src="images/me.jpg" alt="Photo of me" class="profile-photo"> -->
+    <h1>James John</h1>
+    <p class="tagline">Maker of great subs. Future king of pizza.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>
+        I'm James John, and I make great subs. Now I've set my sights on
+        something bigger: taking over the pizza business from the King
+        himself, my dad, Pere John.
+      </p>
+    </section>
+
+    <section>
+      <h2>Interests</h2>
+      <ul>
+        <li>Sub sandwiches</li>
+        <li>Pizza</li>
+        <li>Tar Heel sports</li>
+        <li>Collecting cowboy hats</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Fun Stuff</h2>
+      <!-- Each "grid-cell" is one box in the grid. To add another,
+           copy a whole grid-cell block; the grid rearranges itself. -->
+      <div class="button-grid">
+        <div class="grid-cell">
+          <h3>Random Photo</h3>
+          <p>See a random photo: sailboats and tall ships, beaches, mountains, Rome, Nice and Èze, Ireland, or fish.</p>
+          <button id="show-image-button" type="button">Show me a random photo</button>
+        </div>
+
+        <div class="grid-cell">
+          <h3>Random Fractal</h3>
+          <p>Compute a new Julia set fractal with random settings.</p>
+          <button id="show-fractal-button" type="button">Draw me a fractal</button>
+        </div>
+
+        <div class="grid-cell">
+          <h3>Mandelbrot Zoom</h3>
+          <p>Zoom in on a random spot along the edge of the Mandelbrot set.</p>
+          <button id="show-mandelbrot-button" type="button">Zoom into the Mandelbrot set</button>
+        </div>
+
+        <div class="grid-cell">
+          <h3>Sierpiński Triangle</h3>
+          <p>Press "Next step" to watch the triangle divide.</p>
+          <button id="show-sierpinski-button" type="button">Draw a Sierpiński triangle</button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>You can reach me at <a href="mailto:you@example.com">you@example.com</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 James John</p>
+    <p class="disclaimer">James John and Pere John are fictional characters, made up for fun.</p>
+  </footer>
+
+  <!-- Pop-up window for the random photo. It stays hidden until
+       js/script.js opens it. -->
+  <dialog id="image-dialog">
+    <img id="random-image" src="" alt="A randomly chosen photo">
+    <p id="image-caption"></p>
+    <p id="image-credit" class="hint"></p>
+    <div class="dialog-buttons">
+      <!-- autofocus: when the pop-up opens, Next is selected,
+           so pressing Enter repeatedly flips through photos -->
+      <button id="next-image-button" type="button" autofocus>Next</button>
+      <button id="done-button" type="button">Done</button>
+    </div>
+  </dialog>
+
+  <!-- Pop-up window for the fractal. js/script.js draws the fractal
+       onto the canvas, pixel by pixel. -->
+  <dialog id="fractal-dialog">
+    <canvas id="fractal-canvas" width="640" height="480"></canvas>
+    <p id="fractal-info"></p>
+    <div class="dialog-buttons">
+      <button id="fractal-more-button" type="button">More depth</button>
+      <button id="fractal-done-button" type="button">Done</button>
+    </div>
+  </dialog>
+
+  <!-- Pop-up window for the Mandelbrot zoom -->
+  <dialog id="mandelbrot-dialog">
+    <canvas id="mandelbrot-canvas" width="640" height="480"></canvas>
+    <p id="mandelbrot-info"></p>
+    <p class="hint">Drag a box on the picture to zoom into it, or click to zoom in 4× there.</p>
+    <div class="dialog-buttons">
+      <button id="mandelbrot-back-button" type="button">Back</button>
+      <button id="mandelbrot-more-button" type="button">More depth</button>
+      <button id="mandelbrot-sharpen-button" type="button">Sharpen</button>
+      <button id="mandelbrot-done-button" type="button">Done</button>
+    </div>
+  </dialog>
+
+  <!-- Pop-up window for the Sierpiński triangle -->
+  <dialog id="sierpinski-dialog">
+    <canvas id="sierpinski-canvas" width="600" height="520"></canvas>
+    <p id="sierpinski-info"></p>
+    <div class="dialog-buttons">
+      <button id="sierpinski-next-button" type="button">Next step</button>
+      <button id="sierpinski-done-button" type="button">Done</button>
+    </div>
+  </dialog>
+
+  <!-- JavaScript goes last so the elements above exist before it runs -->
+  <script src="js/script.js"></script>
+</body>
+</html>

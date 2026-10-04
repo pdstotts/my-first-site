@@ -1,0 +1,198 @@
+/* ============================================
+   style.css — controls how index.html looks
+   ============================================ */
+
+/* Colors are defined once here so they're easy to change everywhere */
+:root {
+  --text-color: #222;
+  --background-color: #fafafa;
+  --accent-color: #2a6f97;
+  --muted-color: #666;
+}
+
+/* Base styles for the whole page */
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  max-width: 700px;   /* keeps lines of text a comfortable width */
+  margin: 0 auto;     /* centers the page horizontally */
+  padding: 2rem 1rem;
+}
+
+/* Header area at the top */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* makes the image a circle */
+  object-fit: cover;
+}
+
+h1 {
+  margin-bottom: 0.25rem;
+}
+
+.tagline {
+  color: var(--muted-color);
+  margin-top: 0;
+}
+
+/* Section headings */
+h2 {
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 0.25rem;
+}
+
+/* Links */
+a {
+  color: var(--accent-color);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Grid of boxes for the "Fun Stuff" buttons. The number of columns comes
+   from --columns, which js/script.js sets to keep the grid as square as
+   possible (2 columns for 4 boxes, 3 for 5–9, and so on). */
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(var(--columns, 2), 1fr);
+  gap: 1rem;
+}
+
+.grid-cell {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: white;
+}
+
+.grid-cell h3 {
+  margin: 0 0 0.5rem;
+  color: var(--accent-color);
+}
+
+.grid-cell p {
+  margin-top: 0;
+}
+
+/* Pushes each button to the bottom of its box, so buttons line up across a row */
+.grid-cell button {
+  margin-top: auto;
+}
+
+/* On narrow screens like phones, stack the boxes in a single column */
+@media (max-width: 500px) {
+  .button-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Buttons */
+button {
+  font: inherit;
+  color: white;
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 6px;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+/* A button that can't be clicked right now (e.g. after the last step) */
+button:disabled {
+  background-color: var(--muted-color);
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Pop-up window that shows the random photo */
+dialog {
+  border: none;
+  border-radius: 10px;
+  padding: 1rem;
+  max-width: 90vw;
+  text-align: center;
+}
+
+/* The dimmed layer behind the pop-up */
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+dialog img,
+dialog canvas {
+  display: block;
+  max-width: 100%;
+  max-height: 70vh;  /* keeps tall pictures from overflowing the screen */
+  margin: 0 auto 1rem;
+  border-radius: 6px;
+}
+
+/* Caption and photographer credit under the random photo */
+#image-caption {
+  font-weight: 600;
+  margin: 0 0 0.25rem;
+}
+
+#image-credit {
+  margin-top: 0;
+}
+
+#fractal-info,
+#mandelbrot-info,
+#sierpinski-info {
+  color: var(--muted-color);
+  font-size: 0.9rem;
+  margin-top: 0;
+}
+
+/* The Mandelbrot picture can be clicked or dragged on to zoom in */
+#mandelbrot-canvas {
+  /* The canvas holds more pixels than this on sharp screens, but is always
+     shown at this size: 640px wide, or smaller to fit the window (4:3 shape) */
+  width: min(640px, calc(70vh * 4 / 3));
+  height: auto;
+  cursor: crosshair;
+  touch-action: none; /* lets you drag on touch screens without scrolling */
+}
+
+.hint {
+  font-size: 0.85rem;
+  color: var(--muted-color);
+}
+
+/* Puts several buttons in a pop-up side by side */
+.dialog-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+/* Small print in the footer */
+.disclaimer {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+/* Footer at the bottom */
+footer {
+  margin-top: 3rem;
+  text-align: center;
+  color: var(--muted-color);
+  font-size: 0.9rem;
+}
