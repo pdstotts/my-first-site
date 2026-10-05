@@ -31,7 +31,7 @@ The stylesheet, which controls **appearance**: colors, fonts, spacing, and layou
 Keeping the styling separate from the content means you can redesign the page without editing the HTML, and any future pages can share the same stylesheet.
 
 ### `js/script.js`
-The JavaScript file, which controls **behavior**. It powers the "Show me a random photo" button: when you click it, the script picks one of 40 photos at random and shows it in a pop-up window (an HTML `<dialog>` element), along with a caption and a credit to the photographer. Clicking **Next** shows another random photo in the same pop-up. Clicking **Done** closes the pop-up, and so does pressing the Esc key. The script is loaded at the bottom of `index.html` with:
+The JavaScript file, which controls **behavior**. It powers the "Show me a random photo" button: when you click it, the script picks one of 46 photos at random and shows it in a pop-up window (an HTML `<dialog>` element), along with a caption and a credit to the photographer. Clicking **Next** shows another random photo in the same pop-up. Clicking **Done** closes the pop-up, and so does pressing the Esc key. The script is loaded at the bottom of `index.html` with:
 
 ```html
 <script src="js/script.js"></script>
@@ -66,7 +66,7 @@ Holds image files (photos, icons, graphics). To use one, save it here and point 
 
 The `alt` text describes the image for screen readers and shows up if the image can't load.
 
-The 40 photos used by the random-photo button are named by topic: `sailboat-1.jpg`, `beach-2.jpg`, `rome-3.jpg`, and so on. They cover sailboats, tall ships, early-1900s America's Cup yachts, beaches, mountains, Rome, Nice and nearby Èze, Ireland, and fish. They're openly licensed photos from Flickr, found through [Openverse](https://openverse.org). Most require crediting the photographer, so the pop-up shows a caption and a credit line under each photo. `images/CREDITS.md` lists every photo with its photographer, original page, and license.
+The 46 photos used by the random-photo button are named by topic: `sailboat-1.jpg`, `beach-2.jpg`, `rome-3.jpg`, and so on. They cover sailboats, tall ships, early-1900s America's Cup yachts, beaches, mountains, Rome, Nice and nearby Èze, Ireland, and fish (including sport fish: marlin, striped bass, mahi-mahi, snook, red snapper, and flounder). They're openly licensed photos from Flickr, found through [Openverse](https://openverse.org). Most require crediting the photographer, so the pop-up shows a caption and a credit line under each photo. `images/CREDITS.md` lists every photo with its photographer, original page, and license.
 
 To add a photo, save it in `images/` and add a matching entry to the `images` list at the top of `js/script.js`.
 

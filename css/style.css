@@ -8,6 +8,16 @@
   --background-color: #fafafa;
   --accent-color: #2a6f97;
   --muted-color: #666;
+
+  /* Buttons: buff/beige with dark brown lettering for strong contrast */
+  --button-color: #e8d5aa;
+  --button-hover-color: #dcc48f;
+  --button-border-color: #b89b63;
+  --button-text-color: #3d2b1f;
+
+  /* The boxes in the Fun Stuff grid: a pale salmon */
+  --box-color: #fde9e1;
+  --box-border-color: #f0c7b8;
 }
 
 /* Base styles for the whole page */
@@ -50,6 +60,19 @@ h2 {
   padding-bottom: 0.25rem;
 }
 
+/* The Contact section: an extra line of space above it, and right-aligned */
+.contact {
+  /* About one line of text. (Padding, not margin: a margin here would
+     merge with the heading's own margin instead of adding to it.) */
+  padding-top: 1.6rem;
+  text-align: right;
+}
+
+.contact h2 {
+  font-style: italic;
+  color: #cd5c5c; /* a softer, more pastel firebrick ("indian red") */
+}
+
 /* Links */
 a {
   color: var(--accent-color);
@@ -71,19 +94,24 @@ a:hover {
 .grid-cell {
   display: flex;
   flex-direction: column;
-  border: 1px solid #ddd;
+  border: 1px solid var(--box-border-color);
   border-radius: 10px;
-  padding: 1rem;
-  background-color: white;
+  padding: 0.75rem 1rem;
+  background-color: var(--box-color);
+  line-height: 1.3; /* tighter than the rest of the page, so the boxes are shorter */
 }
 
 .grid-cell h3 {
-  margin: 0 0 0.5rem;
+  margin: 0 0 0.35rem;
   color: var(--accent-color);
 }
 
 .grid-cell p {
-  margin-top: 0;
+  margin: 0 0 0.6rem;
+}
+
+.grid-cell button {
+  padding: 0.45rem 1rem;
 }
 
 /* Pushes each button to the bottom of its box, so buttons line up across a row */
@@ -101,22 +129,24 @@ a:hover {
 /* Buttons */
 button {
   font: inherit;
-  color: white;
-  background-color: var(--accent-color);
-  border: none;
+  font-weight: 600;
+  color: var(--button-text-color);
+  background-color: var(--button-color);
+  border: 1px solid var(--button-border-color);
   border-radius: 6px;
   padding: 0.6rem 1.2rem;
   cursor: pointer;
 }
 
 button:hover {
-  opacity: 0.85;
+  background-color: var(--button-hover-color);
 }
 
 /* A button that can't be clicked right now (e.g. after the last step) */
 button:disabled {
-  background-color: var(--muted-color);
-  opacity: 0.5;
+  color: #9a9083;
+  background-color: #ece8df;
+  border-color: #d6d0c4;
   cursor: not-allowed;
 }
 

@@ -18,12 +18,18 @@ The photos used by the random-photo button were found through [Openverse](https:
 | rome-3.jpg | [Pantheon, Rome](https://www.flickr.com/photos/11234074@N05/24823655706) | Philippe Vieux-Jeanton | CC0 |
 | nice-1.jpg | [Promenade des Anglais and beach, Nice](https://www.flickr.com/photos/50216172@N00/2769217231) | jimmyharris | CC BY 2.0 |
 | nice-2.jpg | [French Riviera - Promenade de Anglais at Nice](https://www.flickr.com/photos/7164796@N04/7892869322) | deepakhere.mypixels | CC BY 2.0 |
-| nice-3.jpg | [beach, Nice, France](https://www.flickr.com/photos/28477990@N03/9550052598) | EEPaul | CC BY 2.0 |
+| nice-3.jpg | [Waterfall, Colline du Chateau, Nice](https://www.flickr.com/photos/69845378@N00/2268123348) | Dale Harvey | CC BY 2.0 |
 | ireland-1.jpg | [Cliffs of Moher, Ireland](https://www.flickr.com/photos/65865070@N05/13609090133) | DHuiz | CC BY 2.0 |
 | ireland-2.jpg | [Glendalough, Wicklow, Ireland](https://www.flickr.com/photos/87690240@N03/16454982694) | Giuseppe Milo (www.pixael.com) | CC BY 2.0 |
 | ireland-3.jpg | [Malin Head, Donegal, Ireland](https://www.flickr.com/photos/87690240@N03/52046139980) | Giuseppe Milo (www.pixael.com) | CC BY 2.0 |
 | fish-1.jpg | [Clownfish (Amphiprion ocellaris)](https://www.flickr.com/photos/47190679@N06/5068940056) | Leszek.Leszczynski | CC BY 2.0 |
 | fish-2.jpg | [Tropical Fish](https://www.flickr.com/photos/26782864@N00/1478901145) | wwarby | CC BY 2.0 |
+| fish-3.jpg | [White Marlin in North Carolina](https://www.flickr.com/photos/9765210@N03/1394318584) | Dominic Sherony | CC BY-SA 2.0 |
+| fish-4.jpg | [Striped Bass](https://www.flickr.com/photos/30839029@N05/8982659422) | Lake Mead National Recreation Area | CC BY-SA 2.0 |
+| fish-5.jpg | [DSC04738 (mahi-mahi)](https://www.flickr.com/photos/94224615@N00/2469952670) | Jed_Record | CC BY 2.0 |
+| fish-6.jpg | [Common Snook (Centropomus undecimalis)](https://www.flickr.com/photos/65695019@N07/49594610507) | berniedup | CC BY-SA 2.0 |
+| fish-7.jpg | [Red Snapper](https://www.flickr.com/photos/23438569@N02/5827629435) | Extra Zebra | CC BY 2.0 |
+| fish-8.jpg | [Caribbean Picasso (peacock flounder)](https://www.flickr.com/photos/40467171@N00/153409631) | laszlo-photo | CC BY 2.0 |
 | rome-4.jpg | [Italy-3234 - St. Peter's Basilica](https://www.flickr.com/photos/22490717@N02/5390638891) | archer10 (Dennis) | CC BY-SA 2.0 |
 | rome-5.jpg | [The Spanish Steps, Rome - and transport for the visitors](https://www.flickr.com/photos/158652122@N02/48822157017) | M McBey | CC BY 2.0 |
 | rome-6.jpg | [Roman Forum](https://www.flickr.com/photos/91545223@N00/5409380582) | Benson Kua | CC BY-SA 2.0 |
