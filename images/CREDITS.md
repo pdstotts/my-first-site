@@ -1,5 +1,11 @@
 # Photo Credits
 
+## Profile photo
+
+`me.jpg` is a 1901 photograph of physicist Max Planck, photographer unknown. It's in the public domain because of its age, and it's the portrait used in Wikipedia's article on Planck. It appears here as a joke ("bombed by life"); the page is not about Planck.
+
+## Random-photo collection
+
 The photos used by the random-photo button were found through [Openverse](https://openverse.org) and are hosted on Flickr. Most are licensed under [Creative Commons Attribution 2.0 (CC BY 2.0)](https://creativecommons.org/licenses/by/2.0/) or [Attribution-ShareAlike 2.0 (CC BY-SA 2.0)](https://creativecommons.org/licenses/by-sa/2.0/). Those licenses let you use a photo freely as long as you credit the photographer, which the page does under each photo. The rest are [CC0](https://creativecommons.org/publicdomain/zero/1.0/) or [public domain](https://creativecommons.org/publicdomain/mark/1.0/), meaning no restrictions at all. All the photos were resized to at most 1024 pixels wide for this site.
 
 | File | Photo | Photographer | License |

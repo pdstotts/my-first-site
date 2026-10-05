@@ -10,9 +10,10 @@
 <body>
 
   <header>
-    <!-- To add a photo: put a file such as me.jpg in the images/ folder,
-         then remove the comment markers around the line below. -->
-    <!-- <img src="images/me.jpg" alt="Photo of me" class="profile-photo"> -->
+    <!-- Profile photo: images/me.jpg. If the file is missing,
+         onerror removes the image so no broken-picture icon shows. -->
+    <img src="images/me.jpg" alt="Me, looking thoroughly bombed by life (actually a 1901 photo of physicist Max Planck)" class="profile-photo"
+         onerror="this.remove()">
     <h1>James John</h1>
     <p class="tagline">Maker of great subs. Future king of pizza.</p>
   </header>

@@ -80,7 +80,7 @@ Find `index.html` in File Explorer and double-click it to open it in your web br
 ## How to customize it
 
 1. Open `index.html` and replace the placeholder text (your name, tagline, about section, interests, and email).
-2. Add a photo to `images/` and uncomment the `<img>` line in the header.
+2. The profile photo at the top is `images/me.jpg` (currently a 1901 photo of Max Planck, for the "bombed by life" look). Replace that file to change it. If it is removed, the page simply shows no photo.
 3. Change the colors at the top of `css/style.css` to make the page your own.
 
 ## Ideas for later
